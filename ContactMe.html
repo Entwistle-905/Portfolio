@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="./CSS/contactme.css" />
+    <link rel="icon" type="image/x-icon" href="./photos/Favicon_Lobby.png">
+
+    <!--<script src="./js/script.js" type="text/javascript"></script>-->
+
+    
+    <body>
+        <center>
+            <nav>
+                <ul align="center">
+                    <li>
+                        <a href="index.html" class="nav-selections">Lobby</a>
+                        <a href="./STAGE1.html" class="nav-selections">Profile</a>
+                        <a href="./STAGE2.html" class="nav-selections">Career</a>
+                        <a href="./STAGE4.html" class="nav-selections">Goal</a>
+                        <a href="./ContactMe.html" class="nav-selections">Email</a>
+                        <a class="nav-selections">   </a>
+                        <a href="ContactMe.html" class="nav-selections">Top</a>
+                        <a href="ContactMe.html#Bottom" class="nav-selections">Bottom</a>
+                    </li>
+                    <li>
+                        <a href="./STAGE3.html" class="nav-selections">Portfolio : Video</a>
+                        <a href="./STAGE4_Portfolio1.html" class="nav-selections">Photos</a>
+                        <a href="./STAGE4_College.html" class="nav-selections">College</a>
+                        <a href="./STAGE4_Prog.html" class="nav-selections">Coding</a>
+                        <a href="./STAGE4_Grph.html" class="nav-selections">Monthly Graphic</a>
+                    </li>
+                </ul>
+            </nav>
+
+
+        <h1><strong>Get In Touch</strong></h1>
+        <img src="./photos/waddledee2.png" alt="waddle2" width="300" title="waddle2"><br><br>
+        <div id="form"></div>
+
+        <table>
+            <tr>
+                <td>
+                    <form action="/action_page.php">
+                        <label for="FName">First name: </label>
+                        <input type="text" id="FName" name="first_name" value="John"><br>
+        
+                        <label for="LName">Last name: </label>
+                        <input type="text" id="LName" name="last_name" value="Doe"><br><br>
+        
+                        <label for="Phone">Phone Number: </label>
+                        <input type="text" id="Phone" name="phone" value="000-000-0000"><br><br>
+        
+                        <label for="EmailAdd">Email: </label>
+                        <input type="text" id="EmailAdd" name="email_name" value="ABC123">
+        
+                        <label for="EmailDom">@</label>
+                        <input type="text" id="EmailDom" name="email_domain" value="google.com"><br><br>
+        
+                        <label for="LText">Message: </label><br>
+                        <textarea rows="5" cols="60" id="LText" name="message" value="Contact Me."></textarea>
+                        
+                        <br>
+                        <input type="submit" value="Submit">
+                    </form> 
+                </td>
+            </tr>
+        </table>
+
+        </div>
+
+    
+
+        <br>
+        <br>
+        <br>
+        <!--
+        <a href="ContactMe.html" style="color: rgb(156, 89, 219);" id="Bottom"> back to top</a>
+        using id bottom, and back to the bottom
+        <br>
+        <a href="index.html"> back to Lobby</a>-->
+
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"> </script> 
+        <script type="text/javascript"> 
+            (function(){ 
+                emailjs.init("S.Lee905"); 
+            })(); 
+
+            // code fragment
+            var data = {
+                service_id: 'S.Lee905',
+                template_id: 'template_4hyqi4n',
+                user_id: 'YOUR_USER_ID',
+                template_params: {
+                    'username': 'James',
+                    'g-recaptcha-response': '03AHJ_ASjnLA214KSNKFJAK12sfKASfehbmfd...'
+                }
+            };
+            
+            $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
+                type: 'POST',
+                data: JSON.stringify(data),
+                contentType: 'application/json'
+            }).done(function() {
+                alert('Your mail is sent!');
+            }).fail(function(error) {
+                alert('Oops... ' + JSON.stringify(error));
+            });
+
+        </script>
+
+        <p id="Bottom">Copyright 2022. Soomin Lee. All pictures cannot be copied without permission.</p>
+    </center>
+
+    </body>
+</head>
+</html>

@@ -1,0 +1,109 @@
+html, body{
+    margin: 10px;
+    background-color: #BDD5FE;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+nav {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+.nav-selections {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font: 16px "lato", sans-serif;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px; /*space between lines */
+    /*float: right;*/
+    margin-left: 5px;
+    transition: 1.5s;
+}
+
+.nav-selections:hover {
+    transition: 1.5s;
+    color: black;
+}
+
+
+
+#sticky {
+    /*
+    background-image: url("https://thumbs.dreamstime.com/b/long-road-4344318.jpg");
+    */
+    background-color: #9ba4e0;
+    overflow: auto;
+    list-style-type: none;
+}
+
+#sticky:first-child {
+    margin-right: 35px;
+}
+
+
+table, td, th{
+    border: 1px solid #6c93d6;
+}
+
+.bodyfont{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.boldtext{
+    font-weight: bold;
+}
+
+.stylied-table {
+    border: 1px solid #6c93d6;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.);
+    }
+
+.stylied-table thead tr {
+    background-color: #6c93d6;
+    color: #ffffff;
+    text-align: left;
+}
+
+.stylied-table th, .styled-table td {
+    padding: 12px 15px
+}
+
+.stylied-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.stylied-table tbody tr:nth-of-type(even) {
+    background-color: #6c93d6;
+    text-align: center;
+}
+
+.stylied-table tbody tr:last-of-type {
+    border-bottom: 2px solid #6c93d6;
+}
+
+.stylied-table tbody tr.active-row{
+    font-size: large;
+    font-weight: bold;
+    color: #395d9c;
+}
+
+/*
+main{
+    position: relative;
+}
+
+#profile{
+    position: absolute;
+    top: 15px;
+    left: 30px;
+}
+*/
+

@@ -1,0 +1,56 @@
+body{
+    margin: 10px;
+    background-color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+main{
+    position: relative;
+}
+
+.position{
+    position: absolute;
+}
+
+
+.div-selections:hover{
+    transition: 1.5s;
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+#stage1{
+    top: 204px;
+    left: 63px;
+}
+
+#stage2{
+    top: 432px;
+    left: 63px;
+}
+
+#stage3{
+    top: 204px;
+    left: 913px;
+}
+
+#stage4{
+    top: 432px;
+    left: 913px;
+}
+
+#logo{
+    bottom: 15px;
+    left: 1095px;
+}
+
+#contact{
+    bottom: 82px;
+    left: 550px;
+}
+
+#cloud{
+    top: 7px;
+    left: 350px;
+}
